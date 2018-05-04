@@ -1,0 +1,147 @@
+<html>
+<head>
+	<title>registration form</title>
+	<style>
+			body
+			{
+				background-color:3BB4E6;
+			} 
+			.heading
+			{
+				font-size:40;
+				font-family:Impact, Charcoal, sans-serif;
+				text-align:center;
+				text-weight:bold;
+				text-decoration:underline ;
+				text-decoration-style:double;	
+				color:042B3B;
+				
+			}
+			.alignn	
+			{
+				font-family:Impact, Charcoal, sans-serif;
+				text-weight:bold;
+				text-align:center;
+				text-size:20;
+			}
+			#borderimaging
+			{
+				text-align:center;
+			}
+			input[type="submit"]
+			{
+				height:3em;
+			}
+			.head
+			{
+				
+				font-size:30;
+				font-family:Impact, Charcoal, sans-serif;
+				text-align:center;
+				text-decoration:underline;
+				text-decoration-style:double;
+				text-weight:bold;	
+				color:black;
+				
+			}
+			a
+			{
+					
+				font-family:Impact, Charcoal, sans-serif;
+				font-size:20;
+				text-weight:bold;
+				color:D4F1FC;
+			}
+			.head1,label
+			{
+				
+				font-size:18;
+				font-family:Impact, Charcoal, sans-serif;
+				
+				text-weight:bold;	
+				color:black;
+				
+			}
+			p
+			{
+				font-family:Impact, Charcoal, sans-serif;
+				font-size:30;
+				text-weight:bold;
+				color:042B3B;
+				text-align:center;
+			}
+			ol,li
+			{
+				font-family:Impact, Charcoal, sans-serif;
+				font-size:20;
+				text-weight:bold;
+				color:black;
+				text-align:left;
+			}
+			fieldset
+			{
+				background-color:C6DFE8;
+			}
+	</style>
+	<script type="text/javascript" src="E:\Web mini project\validate.js"></script>
+	
+</head>
+<body>
+	<p class="heading">REGISTRATION FORM</p>
+	<a href="coursecategories.html">HOME</a>&nbsp&nbsp&nbsp&nbsp
+	<a href="contact.html">CONTACT</a>&nbsp&nbsp&nbsp&nbsp
+	<a href="form.html">FORM</a><br><br>
+	<p>Enter the details to register for the course</p>
+	
+	<fieldset style="border:4px solid black">
+	<legend><p class="head">General Details</p></legend>
+	<form action="" method="post" name="StudentRegistration" onsubmit="return(validate());">
+		<label>Name:&nbsp</label><input type="text" name="uname" placeholder="Enter full name"><br>
+		<label>Gender:</label>&nbsp&nbsp&nbsp
+			<label>Male:&nbsp<input type="radio" name="gender" value="gender" ></label>
+			<label>Female:&nbsp<input type="radio" name="gender" value="gender" ></label><br>
+		<label>Age:&nbsp<input type="age" min="18" max="50" name="age" placeholder="Enter your age" ></label><br>
+		<label>Birth date:&nbsp<input type="date" name="date" placeholder="dd/mm/yy" ></label><br>
+		
+
+	
+	</fieldset>
+	
+	<fieldset style="border:4px solid black">
+	<legend><p class="head">Parents Details</p></legend>
+	
+		<label>Father's Name:&nbsp</label><input type="text" name="Fname" placeholder="Enter father's name"><br>
+		<label>Mother's Name:&nbsp</label><input type="text" name="Mname" placeholder="Enter mother's name"><br>
+		<label>Contact number1:&nbsp</label><input type="number" name="contactno1" ><br>
+		<label>Contact number2:&nbsp</label><input type="number" name="contactno2"><br>
+	
+	
+	</fieldset>
+	
+	
+	<fieldset style="border:4px solid black">
+	<legend><p class="head">Contact Details</p></legend>
+	
+		<label>E-mail:&nbsp</label><input type="email" name="emailid" placeholder="Enter mail id"><br>
+		<label>Mobile:&nbsp</label><input type="number" name="studentsnumber"></label><br>
+		<label>Address:&nbsp</label><br><textarea rows="4" cols="40" name="address"></textarea></label><br>
+		
+	
+	</fieldset>
+	<fieldset style="border:4px solid black">
+	<legend><label for="Course" class="head"> Select course </label></legend><br>
+	<select id="Course" name="Course">
+	<option value="-1"> Select <selected> </option>
+	<option value="Computer science"> Computer science engineering </option>
+	<option value="Mechanical"> Mechanical engineering </option>
+	<option value="Civil"> Civil engineering </option>
+	<option value="Electronics and communication"> Electronics and communication engineering </option>
+	<option value="Electrical"> Electrical engineering </option>
+	</select><br><br>
+	<label>Comments(if any):<br><textarea rows="4" cols="40" name="comments"></textarea></label>
+	</fieldset>
+	
+	<center><button type="submit" name="submit" value="submit" >Submit</button>&nbsp
+	<button type="reset" name="reset" value="reset">Reset</button></center>
+	</form>
+	

@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>Login page</title>
+	<style>
+			body
+			{
+					background-color:3BB4E6;
+			}
+			.heading1
+			{
+				font-size:40;
+				font-family:Impact, Charcoal, sans-serif;
+				text-align:center;
+				text-weight:bold;
+				text-decoration:underline ;
+				text-decoration-style:double;
+				color:042B3B;
+				position:relative;
+			}
+			.heading
+			{
+				font-size:40;
+				font-family:Impact, Charcoal, sans-serif;
+				text-align:center;
+				text-weight:bold;
+				text-decoration:underline ;
+				text-decoration-style:double;
+				color:042B3B;
+				position:relative;
+				top:-40px;
+			}
+			.alignn
+			{
+				font-family:Impact, Charcoal, sans-serif;
+				text-weight:bold;
+				text-align:center;
+				text-size:20;
+			}
+			#borderimaging
+			{
+				text-align:center;
+			}
+			input[type="submit"]
+			{
+				height:3em;
+			}
+			.head
+			{
+				font-size:20;
+				font-family:Impact, Charcoal, sans-serif;
+				text-align:center;
+				text-weight:bold;
+				text-decoration:underline ;
+				text-decoration-style:double;
+				color:042B3B;
+				position:relative;
+				top:-20px;
+
+			}
+	</style>
+	<script  type="text/javascript" name="javascript">
+	function clickedButton()
+	{
+		if(document.login_form.emailid.value=="shah.yash362@gmail.com"&&document.login_form.password.value=="yashshah2")
+		{
+			window.location = 'coursecategories.html';
+		}
+		else
+		{
+			alert("Incorrect E-mail id or password!!!");
+			document.login_form.emailid.focus();
+			return false;
+		}
+	}
+	</script>
+        
+	
+	
+<head>
+<body>
+	<div class="heading1"><img src=".\pics\GIT logo.jpg"height="150" width="150" style="border:5px groove blue"></img>&nbsp&nbsp&nbspCOURSE REGISTRATION AND DETAILS &nbsp&nbsp&nbsp<img src=".\pics\GIT bldg.jpg"height="150" width="150" style="border:5px groove blue"></img></div>
+	<p class="heading1">Welcome to <br> <h4 class="head">Karnataka Law Society's</h4><p class="heading">Gogte Institute of Technology</p>
+	<div id="borderimaging"><img src=".\pics\gitentrance.jpg" height="300" width="300" style="border:5px groove blue"></img></div><br><br>
+	<div class="alignn">
+	<form action="student.php"  method="post" name="login_form"  >
+			<label><div style="font-size=27">E-mail ID:&nbsp&nbsp<input type="E-mail"name="emailid"></label><br>
+			<label>Password:<input type="password" name="password"></div></label><br>
+			<label><input type="button" name="Submit" value="Login" onclick="clickedButton()" height="5em"></label>
+	</form>
+	</div>
+	
+</body>
+</html>
